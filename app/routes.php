@@ -20,6 +20,9 @@ Route::get('/home', function(){
 	return View::make('home');
 });
 
+Route::get('about', "HomeController@About");
+Route::get('officers/{id?}', "HomeController@Officers");
+
 Route::get('/helloWorld', function()
 {
 	return "Hello World!";
